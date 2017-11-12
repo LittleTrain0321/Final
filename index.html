@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/video-default.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Innovator-变革者</title>
     <style>
         body{
             background-color: #2A2B2D;
-            
+            padding-top: 10px;
         }
         
         .btn-default:active {
@@ -30,6 +31,7 @@
         .white{
             color: grey;
         }
+       
      </style> 
 </head>
 <body>
@@ -77,7 +79,18 @@
 <!--daohang-->
 		
 <!--主内容-->
-			<div class="hero-unit" style="text-align: center;">
+         
+     <div class="span5">
+                   
+                    <div  class="videoUiWrapper thumbnail">
+                        <video width="100%" height="100%"  id="demo1">                   <source src="video/VR.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                  
+        </div>
+        
+			<div class="hero-unit" style="float: right;">
 				<h1>
 					<font style="color: white;">This is Innovator</font>
 				</h1>
@@ -96,15 +109,21 @@
 -->
 			</div>
 		</div>
+		
+		
 	</div>
 <!--主内容-->
-
+ 
 
 
 </div>
     <script src="js/jquery-1.11.1.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.video-ui.js"></script>
+     <script type="text/javascript" >
+            $('#demo1').videoUI();
+          </script>
 </body>
 </html>
