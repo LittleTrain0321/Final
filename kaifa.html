@@ -30,6 +30,12 @@
         .white{
             color: grey;
         }
+        #sm{display: inline-block; position: absolute;left: 900px;top: 470px;
+            
+        }
+        @media screen and (max-width:700px){
+            #sm{ display: inline-block; position: relative;left: 50px;top: 10px;
+        }
      </style> 
 </head>
 <body>
@@ -60,8 +66,7 @@
                          <li><a href="#" ><font class="white">室内设计</font></a></li>
                          <li><a href="#" ><font class="white">LOGO设计</font></a></li>
                          <li><a href="#" ><font class="white">特效剪辑</font></a></li>
-                         <li><a href="#" ><font class="white">网站制作</font></a></li>
-                         <li><a href="#" ><font class="white">游戏外包</font></a></li>
+                         
                      </ul>
                  </li>
 <!--下拉列表-->
@@ -76,7 +81,22 @@
 <!--daohang-->
 		
 <!--主内容-->
-			
+<!--			pic-->
+
+<div class="span12" style="margin: 0 auto;max-width: 1200px;" >
+<div>
+<img style="width: 100%;max-width: 500px;" src="assets/bootstrap/img/lowpoly.jpg" alt="">
+<label style="display: inline-block; position: relative;left: 50px;" class="checkbox"><input  type="checkbox" /><font style="color: white;">投票给LowPoly风格</font></label>
+</div>
+<div><img style="width: 100%;max-width: 500px;float: right;" src="assets/bootstrap/img/real.jpg" alt="">
+<label  id="sm" class="checkbox"><input  type="checkbox" /><font style="color: white;">投票给Realistic风格</font></label>
+</div>
+
+
+</div>
+
+
+<!--			pic-->
 		</div>
 	</div>
 <!--主内容-->
@@ -84,6 +104,12 @@
 
 
 </div>
+   <br><br>
+   <div style="text-align: center;">
+    <a class="btn btn-default btn-large" href="#"><font style="color: black">投票»</font></a>
+    
+</div>
+   
     <script src="js/jquery-1.11.1.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
